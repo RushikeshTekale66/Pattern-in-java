@@ -2,13 +2,19 @@ class Main {
     void pattern() {
         int length = 5;
 
-        // Program to print mirrored right triangle star pattern..
-
+        // Program to print the Inverted Half Pyramid Star pattern.
+        /*
+          .*****
+          ..****
+          ...***
+          ....**
+          .....*
+         */
         for (int i = 0; i < length; i++) {
-            for (int j = length - i; j > 0; j--) {
+            for (int k = 0; k <= i; k++) {
                 System.out.print(".");
             }
-            for (int k = 0; k <= i; k++) {
+            for (int j = i; j < length; j++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -16,7 +22,7 @@ class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("Star Pattern 3 : Program to print mirrored right triangle star pattern..");
+        System.out.println("Star Pattern 4 : Program to print the Inverted Half Pyramid Star pattern.");
         Main p = new Main();
         p.pattern();
     }
