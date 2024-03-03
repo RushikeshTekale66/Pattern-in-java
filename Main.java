@@ -2,7 +2,7 @@ class Main {
     void pattern() {
         int length = 5;
 
-        // Program to print inverted pyramid star pattern
+        // Program to print square star pattern 
         /*
 * * * * *
  * * * *
@@ -23,7 +23,7 @@ class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println("Star Pattern 6 : Program to print inverted pyramid star pattern");
+        System.out.println("Star Pattern 7 : Program to print square star pattern");
         Main p = new Main();
         p.pattern();
     }
