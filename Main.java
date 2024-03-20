@@ -2,33 +2,34 @@ class Main {
     void pattern() {
         int length = 5;
 
-        //  Program to print the Solid Diamond Star Pattern.
+        //  Program to Program to print the Inverted V Star Pattern..
         /*
-.....* 
-....* *
-...* * *
-..* * * *
-.* * * * *
-* * * * * *
-.* * * * *
-..* * * *
-...* * *
-....* *
-.....*
+            ....*.....
+            ...*.*....
+            ..*...*...
+            .*.....*..
+            *.......*.
          */
-        for(int i=length; i>=-length; i--){
-            for(int j=1; j<=Math.abs(i); j++){
-                System.out.print(".");
+        int x = length;
+        int y = length;
+        for (int j = 1; j <= length; j++) {
+            for (int i = 1; i <= length * 2; i++) {
+                if (i == x || i == y) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(".");
+                }
+
             }
-            for(int k=length; k>=Math.abs(i); k--){
-                System.out.print("* ");
-            }
+            x--;
+            y++;
             System.out.println();
         }
+
     }
 
     public static void main(String[] args) {
-        System.out.println("Star Pattern 9 : Program to print the Solid Diamond Star Pattern.");
+        System.out.println("Star Pattern 10 :  Program to Program to print the Inverted V Star Pattern.");
         Main p = new Main();
         p.pattern();
     }
