@@ -2,7 +2,7 @@ class Main {
     void pattern() {
         int length = 5;
 
-        //  Print the Inverted Full Pyramid Star Pattern.
+        //  Program to print the Solid Inverted Half Diamond Star Pattern.
         /*
             .*********
             ..*******
@@ -10,22 +10,20 @@ class Main {
             ....***
             .....*
          */
-        int start =length*2;
-        for(int i=1; i<=length; i++){
-            for(int j=0; j<i; j++){
+        for(int i=length; i>=-length; i--){
+            for(int j=0; j<Math.abs(i); j++){
                 System.out.print(".");
             }
-            for(int k=0; k<start-1; k++){
+            for(int k=length; k>=Math.abs(i); k--){
                 System.out.print("*");
             }
-            start -=2;
-            System.out.println(); 
+            System.out.println();
         }
 
     }
 
     public static void main(String[] args) {
-        System.out.println("Star Pattern 12 : Print the Inverted Full Pyramid Star Pattern.");
+        System.out.println("Star Pattern 13 : Program to print the Solid Inverted Half Diamond Star Pattern.");
         Main p = new Main();
         p.pattern();
     }
