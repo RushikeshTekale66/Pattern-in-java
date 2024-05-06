@@ -2,31 +2,30 @@ class Main {
     void pattern() {
         int length = 5;
 
-        //  Program to print the Full Pyramid Star Pattern
+        //  Print the Inverted Full Pyramid Star Pattern.
         /*
-            ....*.....
-            ...*.*....
-            ..*...*...
-            .*.....*..
-            *.......*.
+            .*********
+            ..*******
+            ...*****
+            ....***
+            .....*
          */
-        int start = 1;
-        for(int i=length; i>0; i--){
+        int start =length*2;
+        for(int i=1; i<=length; i++){
             for(int j=0; j<i; j++){
                 System.out.print(".");
             }
-            for(int k=0; k<start; k++){
+            for(int k=0; k<start-1; k++){
                 System.out.print("*");
-                
             }
-            start +=2;
-            System.out.println();
+            start -=2;
+            System.out.println(); 
         }
 
     }
 
     public static void main(String[] args) {
-        System.out.println("Star Pattern 11 : Program to print the Full Pyramid Star Pattern.");
+        System.out.println("Star Pattern 12 : Print the Inverted Full Pyramid Star Pattern.");
         Main p = new Main();
         p.pattern();
     }
