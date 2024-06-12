@@ -4,9 +4,10 @@ class Main {
         
         System.out.println("Decreasing trangle");
         for(int i=1; i<=length; i++){
-            for(int j=1; j<=i; j++){
+            for(int j=1; j<=length-i; j++){
                 System.out.print("* ");
             }
+            
             System.out.println();
         }
 
