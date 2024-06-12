@@ -2,9 +2,9 @@ class Main {
     void pattern() {
         int length = 5;
         
-        System.out.println("Square");
+        System.out.println("Decreasing trangle");
         for(int i=1; i<=length; i++){
-            for(int j=1; j<=length; j++){
+            for(int j=1; j<=i; j++){
                 System.out.print("* ");
             }
             System.out.println();
