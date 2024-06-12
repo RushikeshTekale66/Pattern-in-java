@@ -7,6 +7,9 @@ class Main {
             for(int j=1; j<=length-i; j++){
                 System.out.print("* ");
             }
+            for(int k=1; k<=i; k++){
+                System.out.print("# ");
+            }
             
             System.out.println();
         }
